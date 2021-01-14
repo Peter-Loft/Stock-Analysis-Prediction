@@ -17,6 +17,7 @@ Before we can begin reviewing the four stocks, Moderna (MRNA), Pfizer (PFE), Bio
 #### Machine Learning
 
 Before even starting the model selection process, we reviewed several whitepapers authored by Stanford graduate students on the very same topic as our question (http://cs230.stanford.edu/projects_winter_2020/reports/32066186.pdf and http://cs229.stanford.edu/proj2013/DaiZhang-MachineLearningInStockPriceTrendForecasting.pdf). The model has had excellent results with natural language processing in part because of the natural weighting mechanisms the model systematically applies to more recent fluctuations which allows the model to identify and respond to changes in price rapidly. The decision was cemented with the relative accuracy seen from this model in the Gold prediction activity we performed in class. After selecting the model, we had to define the component layers. We attempted several combinations of Dense, LSTM, and Dropout. Surprisingly, there was little issue with overfitting and the dropout layers were adding significantly to processing times without significantly decreasing the Root Mean Squared Error (RMSE). We eventually hit upon two LSTM layers each with 50 nodes, followed by a Dense layer of 25 nodes, with a final Dense output layer of one. This model had the best blend of RMSE scores for training and testing datasets with epochs and batch sizes of one and remained efficient with resources, requiring five to ten seconds per compile.
+<br>
 ![Test Model](./Images/testmodel.PNG)
 
 ![LSTM Train](./Images/lstmTrain.PNG)
