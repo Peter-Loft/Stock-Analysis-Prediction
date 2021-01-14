@@ -1,4 +1,5 @@
 ## Team 1, Project 2
+# Stock Analysis and Prediction
 ### By: Bruno, Diana, Eve, & Peter
 
 <br>
