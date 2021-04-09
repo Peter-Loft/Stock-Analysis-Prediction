@@ -13,6 +13,7 @@ In this project, we used technical analysis to review and select stocks for a ma
 
 Before we can begin reviewing the four stocks, Moderna (MRNA), Pfizer (PFE), BioNTech (BNTX), and AstraZeneca (AZN), we need to request the data we will be transforming. Using pandas_datareader API, allows us to call all stocks into their own dataframes with cohesive timeframes for transformation purposes. Our analysis centered on comparing trade volumes, standard deviation of daily returns, and moving averages for 10, 20, and 50 days. These initial manipulations of the data allowed us to visualize the stocks' relationship with the Matplotlib and Seaborn libraries. We found most value for selecting the primary training stock by reviewing the simple moving averages and by comparing the expected return with the standard deviation of the daily returns. Which ultimately led us to select Moderna MRNA. 
 <br>
+
 ![PairPlot Histogram Scatter](./Images/pairplotHistoScatter.PNG) ![Vaccine Returns PairPlots](./Images/vacretPairPlot.PNG)
 #### Machine Learning
 
